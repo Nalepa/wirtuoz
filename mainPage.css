@@ -68,6 +68,8 @@ background-color: #111;
 .keyboardImage {
     margin:0.5em;
     min-width: 300px;
+    width: 13em;
+    height: 13em;
     border-color: black;
     border-style: solid;
 }

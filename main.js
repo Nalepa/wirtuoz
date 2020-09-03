@@ -5,7 +5,7 @@ document.querySelector("#mainPageSection").remove();
 const offerPageSectionHTML = document.querySelector("#offerPageSection").innerHTML;
 document.querySelector("#offerPageSection").remove();
 
-const buttons = [document.querySelector("#mainPageButton"), document.querySelector("#offerPageButton"), document.querySelector("#aboutPageButton"), document.querySelector("#contactPageButton")]
+const buttons = [document.querySelector("#mainPageButton"), document.querySelector("#offerPageButton"), document.querySelector("#contactPageButton")]
 buttons[0].addEventListener('click', () => {
     sectionPlace.innerHTML = mainPageSectionHTML
     setColor(0);
@@ -17,12 +17,12 @@ buttons[1].addEventListener('click', () => {
     setColor(1);
 })
 
-buttons[2].addEventListener('click', () => {
-    fetchHtml("about.html");
-    setColor(2);
-})
+//buttons[2].addEventListener('click', () => {
+//    fetchHtml("about.html");
+//    setColor(2);
+//})
 
-buttons[3].addEventListener('click', () => {
+buttons[2].addEventListener('click', () => {
     fetchHtml("contact.html");
     setColor(3);
     document.querySelector("#submitButton").addEventListener('click', onSubmit);
